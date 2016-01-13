@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+using DTO;
+using System.Data;
+
+namespace DAO
+{
+    public class Loai_DAO
+    {
+        KetNoi ketnoi;
+        public Loai_DAO()
+        {
+            ketnoi = new KetNoi();
+        }
+
+        public void ThemLoai(Loai_DTO loai)
+        {
+            string them = "insert into Loai values(@maloai, @tenloai)";
+            ketnoi.Cmd = new SqlCommand(them, ketnoi.Cnn);
+            ketnoi.Cmd.Parameters.Add("@maloai", SqlDbType.NVarChar, 10);
+            ketnoi.Cmd.Parameters.Add("@tenloai", SqlDbType.NVarChar, 30);
+
+            ketnoi.Cmd.Parameters["@maloai"].Value = loai.MaLoai;
+            ketnoi.Cmd.Parameters["@tenloai"].Value = loai.TenLoai;
+            ketnoi.MoKetNoi();
+            ketnoi.Cmd.ExecuteNonQuery();
+            ketnoi.DongKetNoi();
+        }
+    }
+}

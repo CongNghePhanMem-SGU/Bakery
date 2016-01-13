@@ -1,0 +1,36 @@
+C:\Users\Pham\Documents\Demo\BUS\bin\Debug\BUS.dll
+C:\Users\Pham\Documents\Demo\BUS\bin\Debug\BUS.pdb
+C:\Users\Pham\Documents\Demo\BUS\bin\Debug\DAO.dll
+C:\Users\Pham\Documents\Demo\BUS\bin\Debug\DTO.dll
+C:\Users\Pham\Documents\Demo\BUS\bin\Debug\DAO.pdb
+C:\Users\Pham\Documents\Demo\BUS\bin\Debug\DTO.pdb
+C:\Users\Pham\Documents\Demo\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\Pham\Documents\Demo\BUS\obj\Debug\BUS.dll
+C:\Users\Pham\Documents\Demo\BUS\obj\Debug\BUS.pdb
+D:\Demo\BUS\bin\Debug\BUS.dll
+D:\Demo\BUS\bin\Debug\BUS.pdb
+D:\Demo\BUS\bin\Debug\DAO.dll
+D:\Demo\BUS\bin\Debug\DTO.dll
+D:\Demo\BUS\bin\Debug\DAO.pdb
+D:\Demo\BUS\bin\Debug\DTO.pdb
+D:\Demo\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\Demo\BUS\obj\Debug\BUS.dll
+D:\Demo\BUS\obj\Debug\BUS.pdb
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Demo\BUS\bin\Debug\BUS.dll
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Demo\BUS\bin\Debug\BUS.pdb
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Demo\BUS\bin\Debug\DAO.dll
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Demo\BUS\bin\Debug\DTO.dll
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Demo\BUS\bin\Debug\DAO.pdb
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Demo\BUS\bin\Debug\DTO.pdb
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Demo\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Demo\BUS\obj\Debug\BUS.dll
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Demo\BUS\obj\Debug\BUS.pdb
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Bakery_Project\BUS\bin\Debug\BUS.dll
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Bakery_Project\BUS\bin\Debug\BUS.pdb
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Bakery_Project\BUS\bin\Debug\DAO.dll
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Bakery_Project\BUS\bin\Debug\DTO.dll
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Bakery_Project\BUS\bin\Debug\DAO.pdb
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Bakery_Project\BUS\bin\Debug\DTO.pdb
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Bakery_Project\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Bakery_Project\BUS\obj\Debug\BUS.dll
+D:\CHUYEN MON\CONG NGHE PHAN MEM\Bakery_Project\BUS\obj\Debug\BUS.pdb

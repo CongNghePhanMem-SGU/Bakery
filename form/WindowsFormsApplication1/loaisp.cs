@@ -1,0 +1,170 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DAO;
+using DTO;
+
+namespace WindowsFormsApplication1
+{
+    public partial class loaisp : Form
+    {
+        public loaisp()
+        {
+            InitializeComponent();
+        }
+
+      
+        //them loai sp
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            Loai_DAO loai_dao = new Loai_DAO();
+            string maloai = txtMaLoai.Text;
+            string tenloai = txtTenLoai.Text;
+            if (KiemTraNhap() == "")
+            {
+                if (loai_dao.KiemTra(maloai) == true)
+                {
+                    MessageBox.Show("Mã loại đã tồn tại!");
+                }
+                else
+                {
+                    Loai_DTO loai_dto = new Loai_DTO();
+                    loai_dto.MaLoai = maloai;
+                    loai_dto.TenLoai = tenloai;
+                    if (loai_dao.ThemLoai(loai_dto) == true)
+                    {
+                        MessageBox.Show("Thêm thành công!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm thất bại!");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show(KiemTraNhap());
+            }
+        }
+
+        //sua loai sp
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            Loai_DAO loai_dao = new Loai_DAO();
+            string maloai = txtMaLoai.Text;
+            string tenloai = txtTenLoai.Text;
+            if (KiemTraNhap() == "")
+            {
+                Loai_DTO loai_dto = new Loai_DTO();
+                loai_dto.MaLoai = maloai;
+                loai_dto.TenLoai = tenloai;
+                if (loai_dao.SuaLoai(loai_dto) == true)
+                {
+                    MessageBox.Show("Sửa thành công!");
+                }
+                else
+                {
+                    MessageBox.Show("Sửa không thực hiện được!");
+                }
+            }
+            else
+            {
+                MessageBox.Show(KiemTraNhap());
+            }
+        }
+
+        //hien thi du lieu len bang
+        private void loaisp_Load(object sender, EventArgs e)
+        {
+            Loai_DAO loai_dao = new Loai_DAO();
+            //datatb.Columns["MaLoai"] = loai_dao.HienThi().Columns["maloai"];
+            datatb.DataSource = loai_dao.HienThi();
+            //datatb.AutoResizeColumns();
+            //datatb.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;//đổ hế grid view
+        }
+
+
+        private void datatb_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (datatb.SelectedRows.Count > 0)
+            {
+                string maloai = datatb.CurrentRow.Cells[0].Value.ToString();
+                string tenloai = datatb.CurrentRow.Cells[1].Value.ToString();
+                txtMaLoai.Text = maloai;
+                txtTenLoai.Text = tenloai;
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn xóa loại sản phẩm?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (datatb.SelectedRows.Count > 0)
+                {
+                    string maloai = datatb.CurrentRow.Cells[0].Value.ToString();
+                    Loai_DAO loai_dao = new Loai_DAO();
+                    if (loai_dao.XoaLoai(maloai) == true)
+                    {
+                        MessageBox.Show("Xóa thành công!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa không thực hiện được");
+                    }
+                }
+            }
+        }
+
+        private void btnTaiLai_Click(object sender, EventArgs e)
+        {
+            Loai_DAO loai_dao = new Loai_DAO();
+            datatb.DataSource = loai_dao.HienThi();
+        }
+
+        private string KiemTraNhap()
+        {
+            string kq = "";
+            if (txtMaLoai.Text.Trim() == "")
+            {
+                kq += "Mã loại không được rỗng!";
+            }
+            else
+            {
+                if (txtTenLoai.Text.Trim() == "")
+                {
+                    kq += "Phải nhập tên loại!";
+                }
+            }
+            return kq;
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string chuoi = txtTim.Text;
+            Loai_DAO loai_dao = new Loai_DAO();
+            datatb.DataSource = loai_dao.TimKiem(chuoi);
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            txtMaLoai.Text = "";
+            txtTenLoai.Text = "";
+        }
+
+
+        //private string KiemTraNhap1()
+        //{
+        //    string kq = "";
+        //    if (txtMaLoai.Text.Trim() == "" || txtTenLoai.Text.Trim() == "" )
+        //    {
+        //        kq += "Mã loại và tên loại không được rỗng!";
+        //    }
+        //    return kq;
+        //}
+    }
+}

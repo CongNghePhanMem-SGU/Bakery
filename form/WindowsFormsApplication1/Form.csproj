@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C47E68E4-F220-473B-9960-8A6C01C6D197}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BakeryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BakeryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BakeryDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BakeryDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CTHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTHD.Designer.cs">
+      <DependentUpon>CTHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDon.Designer.cs">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kho.Designer.cs">
+      <DependentUpon>kho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loaisp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loaisp.Designer.cs">
+      <DependentUpon>loaisp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhaSX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhaSX.Designer.cs">
+      <DependentUpon>NhaSX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SP.Designer.cs">
+      <DependentUpon>SP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiemSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiemSP.Designer.cs">
+      <DependentUpon>TimKiemSP.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CTHD.resx">
+      <DependentUpon>CTHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon.resx">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kho.resx">
+      <DependentUpon>kho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loaisp.resx">
+      <DependentUpon>loaisp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhaSX.resx">
+      <DependentUpon>NhaSX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SP.resx">
+      <DependentUpon>SP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiemSP.resx">
+      <DependentUpon>TimKiemSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="BakeryDataSet.xsc">
+      <DependentUpon>BakeryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BakeryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BakeryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BakeryDataSet.xss">
+      <DependentUpon>BakeryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BakeryDataSet1.xsc">
+      <DependentUpon>BakeryDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BakeryDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BakeryDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BakeryDataSet1.xss">
+      <DependentUpon>BakeryDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BUS\BUS.csproj">
+      <Project>{4E44BB4A-4B2B-49DE-B857-4F0A82157E3E}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DAO\DAO.csproj">
+      <Project>{6042E916-8F1C-4A58-A381-DB554DAA67C2}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DTO\DTO.csproj">
+      <Project>{730353BD-3121-4E67-BB1E-00F77343EAE2}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sp3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sp31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loai3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manufacturers3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cthd3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen_3-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen_3-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tim.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

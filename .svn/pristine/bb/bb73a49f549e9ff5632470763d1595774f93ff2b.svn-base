@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DAO;
+using DTO;
+
+namespace WindowsFormsApplication1
+{
+    public partial class loaisp : Form
+    {
+        public loaisp()
+        {
+            InitializeComponent();
+        }
+
+      
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            Loai_DAO loai_dao = new Loai_DAO();
+            string maloai = txtMaLoai.Text;
+            string tenloai = txtTenLoai.Text;
+            Loai_DTO loai_dto = new Loai_DTO();
+            loai_dto.MaLoai = maloai;
+            loai_dto.TenLoai = tenloai;
+            loai_dao.ThemLoai(loai_dto);
+        }
+
+       
+    }
+}
